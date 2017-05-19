@@ -1,0 +1,36 @@
+
+<!-- <search ="a"></search>
+<div *ngIf="a" class="card">
+
+ -->
+<div class="container main">
+
+<md-grid-list cols="4" rowHeight="1:2">
+<div  *ngFor="let mov of a">
+<md-grid-tile>
+ <md-card>
+  <md-card-header>
+    
+    <md-card-title  class="title" ><strong>Movie Name : {{mov.Title}}</strong></md-card-title>
+    <md-card-subtitle class="title" ><strong>Year : {{mov.Year}}</strong></md-card-subtitle>
+
+  </md-card-header>
+  
+  <img md-card-image class="poster-image" src="{{mov.Poster}}">
+  
+  <md-card-content>
+  <md-input-container class="example-full-width" id="descrip">
+    <input mdInput #movie placeholder="enter your description" >
+  </md-input-container>
+  </md-card-content>
+  
+  <md-card-actions>
+    <button md-button id="update">Update</button>
+    <button md-button id="like">Like</button>
+  </md-card-actions>
+</md-card>
+
+</md-grid-tile>
+</div>
+</md-grid-list>
+<!-- </div> -->
